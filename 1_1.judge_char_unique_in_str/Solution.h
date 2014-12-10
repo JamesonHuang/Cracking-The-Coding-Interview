@@ -8,6 +8,7 @@
     > Conclusion: 
                         （1）策略一：
                             A.根据字符的ASCII值进行排序
+                            B.相邻索引比较
                         
                         （2）策略二：
                             A.定义bool类型数组，初始化置0
@@ -136,7 +137,7 @@ public:
         return true;
     }
 
-//================字符排序版（nlogn）:待写ing==================//
+//================字符排序版（nlogn）==================//
     bool Is_unique_str_bySort(string &s){
         if(s.empty()){
             return true;
