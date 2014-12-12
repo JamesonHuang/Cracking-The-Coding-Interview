@@ -1,10 +1,61 @@
-/*************************************************************************
-	> File Name:        Solution.h
-	> Description:      
+/********************************************************************************
+    > File Name:         Solution.h
+	> Description:     
+                        （1）问题描述：
+                            A.字符串压缩
+                            B.将重复出现的字符转成数字形式
+                            C."aabcccccaaa" ==> "a2b1c5a3"
 	> Conclusion:          
-	> Author:           rh_Jameson
+                        （1）策略一：原字符串操作法
+                            A.不用额外空间
+                            B.去除空格
+                            C.判空
+                            D.字符压缩
+                                a.快慢索引指向值相等，cnt++，快索引向前移位
+                                b.不等，则判断cnt是否等于1
+                                c.cnt == 1
+                                    *.慢索引向前移动一步
+                                    *.将快索引的值赋给慢索引的值
+                                    *.在慢索引处insert "1"
+                                    *.快索引向前移动一位
+                                d.cnt != 1
+                                    *.将cnt转成字符串并替换到慢索引的下一位置
+                                    *.cnt置1
+                            E.最后一组重复字符的处理
+
+                        （2）策略二：另开一字符串
+                            A.去处空格 & 判空
+                            B.字符压缩
+                                a.快慢索引指向值相等，cnt++，快索引向前移位
+                                b.不等，新字符串插入慢索引指向字符和cnt值
+                                c.慢索引指向快索引指向值，cnt置1
+                            C.最后一组重复字符的处理，同B，但仅作一次
+                        
+                        （3）itoa相关：
+                            A.定义： 整型数值转为字符串
+                            B.例： int n = 10；==》"10"
+                            C.itoa函数
+                                a.所属头文件<cstdlib>
+                                b.原型：itoa（int_value,string_buf,base）
+                                    *.base:进制,可选2,8,10,16
+                                c.linux下不可用
+                            D.linux下如何使用itoa
+                                a.自己写一个
+                                b.用stringstream
+                                    *.stringstream ss << int_value
+                                    *.ss >> str
+                                c.c++ 11提供：
+                                    string s = std::to_string(int_value);
+                                d.
+
+                        （4）字符串连接函数append()：
+                            A.strComp.append(s, idx, 1);
+                            B.strComp.append(s);
+                            C.参见cplusplus.com
+                        
+    > Author:           rh_Jameson
 	> Created Time:     2014年12月11日 星期四 15时10分23秒
- ************************************************************************/
+ ***********************************************************************************/
 
 #ifndef _SOLUTION_H
 #define _SOLUTION_H
