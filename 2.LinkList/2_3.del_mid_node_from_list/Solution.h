@@ -39,6 +39,8 @@ public:
             cout << "输入不合法" << endl;
         }
         *(midNode) = *(midNode->next);
+        //midNode->val = midNode->next->val;
+        //midNode->next = midNode->next->next;
     }
 };
 
