@@ -18,7 +18,7 @@ using namespace std;
 int main()
 {
      Solution solution;
-     //Error test cases from leetcode.com
+
      //Test cases
     {
         char str[] = "abcdefg";
