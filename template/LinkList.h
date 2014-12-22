@@ -9,7 +9,8 @@
 #ifndef _LINK_LIST_STRUCT_H
 #define _LINK_LIST_STRUCT_H
 #include<iostream>
-
+#include<cstdlib>
+#include<ctime>
 using namespace std;
 
 //链表结构
