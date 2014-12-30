@@ -61,6 +61,7 @@ Cracking-The-Coding-Interview
 ![mindmap][38]
 
  7. [isPalindrome][39]
+
 ![mindmap][40]
 
   [1]: https://github.com/JamesonHuang/Cracking-The-Coding-Interview/blob/master/1.String/1_1.judge_char_unique_in_str/Solution.h
