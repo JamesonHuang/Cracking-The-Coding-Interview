@@ -29,7 +29,7 @@ Cracking-The-Coding-Interview
  6. [matrix_rotate][18]
 ![mindmap][19]
 
- 7. [str_compression][20]
+ 7. [matrix_clear_zero][20]
 ![mindmap][21]
 ![mindmap][22]
 
